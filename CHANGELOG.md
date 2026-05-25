@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Added root `AGENTS.md` so AI agents given the repository link know how to help non-technical users choose, copy, install, or use ANT.
+- Added pre-public repository hardening: CODEOWNERS, Dependabot for GitHub Actions, pinned CI actions, read-only workflow permissions, and stronger contribution/security guardrails.
 
 ## 0.3.5 - Human-first quick start
 

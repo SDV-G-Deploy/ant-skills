@@ -17,6 +17,8 @@ Thanks for helping make AI agents easier to understand.
 3. Explain important risks clearly.
 4. Prefer examples from real builder workflows: errors, commands, deployments, auth, databases, Git, hosting.
 5. Keep the core skill compact enough to load easily.
+6. Do not add telemetry, secret collection, external install scripts, `curl | sh` flows, or instructions that bypass user confirmation.
+7. Keep copy/paste usage safe: users should be able to inspect skill text before giving it to an agent.
 
 ## Pull request checklist
 
@@ -25,6 +27,7 @@ Thanks for helping make AI agents easier to understand.
 - [ ] Risky actions are handled with confirmation gates.
 - [ ] Examples include a “good” response and optionally a “bad” response.
 - [ ] The change does not make the main `SKILL.md` unnecessarily long.
+- [ ] The change does not introduce unsafe installer behavior, hidden network calls, telemetry, or requests for secrets.
 
 ## Style
 

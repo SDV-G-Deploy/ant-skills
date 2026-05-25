@@ -1,0 +1,9 @@
+# Require owner review for files that can change agent behavior, release checks, or automation.
+* @SDV-G-Deploy
+
+/skills/ @SDV-G-Deploy
+/variants/ @SDV-G-Deploy
+/tools/ @SDV-G-Deploy
+/.github/ @SDV-G-Deploy
+/AGENTS.md @SDV-G-Deploy
+/SECURITY.md @SDV-G-Deploy
