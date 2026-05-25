@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Clarified copy/paste prompts and AI-agent flow for `ant-product-map` so it is presented as an HTML product-map artifact skill, not only as a communication style.
+
 ## 0.4.0 - Product maps
 
 - Added `ant-product-map`, a new skill for turning ideas, repo context, app flows, MVP notes, or product discussions into simple evidence-based HTML product maps for non-technical builders.

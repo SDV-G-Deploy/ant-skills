@@ -28,10 +28,16 @@ Not sure? Start with **ANT Plain Language**.
 You can say:
 
 ```text
-Use this as your communication style for this project.
+Use this skill for this project.
 ```
 
 This works even if your tool does not support formal skill installation.
+
+For ANT Product Map, you can say:
+
+```text
+Use this skill to create a simple HTML product map from my idea or project notes.
+```
 
 ### Option 2: Install with the skills CLI
 

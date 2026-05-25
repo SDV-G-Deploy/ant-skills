@@ -28,10 +28,16 @@ Open one skill file:
 Copy the full text and paste it into your agent with:
 
 ```text
-Use this as your communication style for this project.
+Use this skill for this project.
 ```
 
 This works for tools that do not support formal skill installation.
+
+For `ant-product-map`, use:
+
+```text
+Use this skill to create a simple HTML product map from my idea or project notes.
+```
 
 ## CLI install
 
