@@ -97,6 +97,13 @@ After creating or updating a map, report briefly:
     Что внутри: цель продукта, пользователь, основные блоки, user flow, данные/интеграции, риски и вопросы, следующий MVP-шаг.
     Проверка: открой файл в браузере и посмотри, понятно ли за 30 секунд, что это за продукт и что делать дальше.
 
+Use the same shape in the user's language. In English:
+
+    Done: created the product map.
+    File: docs/maps/product-name.html
+    Inside: product goal, user, main blocks, user flow, data/integrations, risks and questions, next MVP step.
+    Check: open the file in a browser and see whether the product is understandable within 30 seconds.
+
 Keep the explanation short unless the user asks for a deeper audit.
 
 ## Quality Bar

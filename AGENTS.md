@@ -76,6 +76,20 @@ You can install it later if you want, but copy/paste is enough to try it.
 
 Adjust the skill name if the user clearly wants compact or very short answers.
 
+For product-map requests, use this shape:
+
+```text
+Use ANT Product Map.
+
+Fast path:
+1. Open skills/ant-product-map/SKILL.md.
+2. Copy the text.
+3. Paste it into your AI agent with:
+   "Use this skill to create a simple HTML product map from my idea or project notes."
+
+Expected result: a local product-map.html showing the product goal, user, screens, flow, data/integrations, risks, open questions, and next MVP step.
+```
+
 ## Maintainer Work
 
 If the user asks you to edit, release, audit, or package this repository:
