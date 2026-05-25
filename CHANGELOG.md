@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.2 - Public trust polish
+
+- Added a README trust-and-safety section for public visitors and AI agents.
+- Added a root `llms.txt` so agents given the repository link can quickly understand the project, skills, safe usage path, and release URL.
+- Added a small Product Map example input and static HTML output.
+- Updated release verification docs for the four-skill archive set and downloaded checksum validation.
+
 ## 0.4.1 - Product map flow polish
 
 - Clarified copy/paste prompts and AI-agent flow for `ant-product-map` so it is presented as an HTML product-map artifact skill, not only as a communication style.

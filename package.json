@@ -1,6 +1,6 @@
 {
   "name": "ant-skills",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "private": true,
   "description": "Plain-language, compact, low-words, and product-map skills for AI coding agents",
   "license": "MIT",

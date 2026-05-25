@@ -17,6 +17,31 @@ ANT also includes a product-map skill for turning an idea or messy project conte
 
 Not sure? Start with **ANT Plain Language**.
 
+## Try It In 60 Seconds
+
+1. Open [ANT Plain Language](skills/ant-plain-language/SKILL.md).
+2. Copy the full text.
+3. Paste it into your AI agent and say:
+
+```text
+Use this skill for this project.
+```
+
+If you want a product scheme instead of a communication style, use [ANT Product Map](skills/ant-product-map/SKILL.md) and say:
+
+```text
+Use this skill to create a simple HTML product map from my idea or project notes.
+```
+
+## Trust And Safety Before Install
+
+- You can inspect every skill before using it. They are plain text.
+- ANT skills do not ask for API keys, passwords, tokens, billing access, or private account access.
+- ANT release archives are static zip files with checksums in the latest GitHub Release.
+- Do not paste secrets, customer data, private keys, or production credentials into an AI agent unless you understand the risk.
+- ANT tells agents to ask before destructive, public, billing, secret, database, permission, production, or force-push actions.
+- The fastest safe path is copy/paste first, installation later if you actually need it.
+
 ## Fastest Way To Use It
 
 ### Option 1: Copy and paste
@@ -105,6 +130,8 @@ ANT is not “dumbing down” technical work. It is a communication layer: plain
 - [Quick start](docs/quick-start.md)
 - [Skill catalog](docs/skill-catalog.md)
 - [Before/after examples](examples/before-after.en.md)
+- [Product Map example input](examples/product-map-input.md)
+- [Product Map example output](examples/product-map-output.html)
 - [Russian README](README.ru.md)
 - [Windows install notes](docs/install-windows.md)
 

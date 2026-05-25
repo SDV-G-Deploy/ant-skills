@@ -7,6 +7,13 @@ ANT can be used in two ways:
 
 If you are not sure what to choose, use `ant-plain-language`.
 
+## Safe First Use
+
+- Read the skill text before installing it.
+- Do not paste secrets, private keys, customer data, or production credentials into an AI agent.
+- ANT skills do not require API keys, telemetry, background services, or account access.
+- Ask the agent to explain any risky action before you approve it.
+
 ## Choose
 
 | Need | Skill |

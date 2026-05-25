@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop Assistant Product Map</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --line: #d9dee7;
+      --known: #126c45;
+      --assumption: #8a5a00;
+      --unknown: #6b6478;
+      --risk: #9b2c2c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    main {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0;
+    }
+    header, section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    h1, h2, h3 { margin: 0 0 10px; line-height: 1.2; }
+    h1 { font-size: 30px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 16px; }
+    p { margin: 0 0 10px; }
+    ul, ol { margin: 8px 0 0; padding-left: 22px; }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      background: #fbfcfe;
+    }
+    .tag {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      border: 1px solid currentColor;
+    }
+    .known { color: var(--known); }
+    .assumption { color: var(--assumption); }
+    .unknown { color: var(--unknown); }
+    .risk { color: var(--risk); }
+    @media (max-width: 560px) {
+      main { width: min(100% - 20px, 1040px); padding: 20px 0; }
+      header, section { padding: 16px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="tag known">known</p>
+      <h1>Workshop Assistant</h1>
+      <p>An AI helper for local workshop hosts who need to turn a rough idea into a clear first launch plan.</p>
+      <p class="muted">Example map generated from a short product brief. Static local HTML, no external assets.</p>
+    </header>
+
+    <section>
+      <h2>Who It Is For</h2>
+      <div class="grid">
+        <div class="item">
+          <p class="tag known">known</p>
+          <h3>Primary user</h3>
+          <p>People who run local workshops and are comfortable using AI chat tools, but do not want technical setup.</p>
+        </div>
+        <div class="item">
+          <p class="tag known">known</p>
+          <h3>Problem</h3>
+          <p>They have an idea, but need help turning it into a clear landing page outline and launch checklist.</p>
+        </div>
+        <div class="item">
+          <p class="tag assumption">assumption</p>
+          <h3>Success</h3>
+          <p>A host can explain the workshop, list what is needed, and test the idea with three real people.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Product Blocks</h2>
+      <div class="grid">
+        <div class="item">
+          <p class="tag known">known</p>
+          <h3>Idea intake</h3>
+          <p>Collects the workshop topic, audience, format, promise, and constraints in plain language.</p>
+        </div>
+        <div class="item">
+          <p class="tag known">known</p>
+          <h3>Landing outline</h3>
+          <p>Turns the idea into headline, audience, offer, agenda, proof, FAQ, and call to action.</p>
+        </div>
+        <div class="item">
+          <p class="tag known">known</p>
+          <h3>Launch checklist</h3>
+          <p>Lists the minimum tasks before sharing the workshop publicly.</p>
+        </div>
+        <div class="item">
+          <p class="tag unknown">unknown</p>
+          <h3>Payments and signup</h3>
+          <p>Login, payment, database, and email flow are not decided yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>User Flow</h2>
+      <ol>
+        <li>User describes the workshop idea in normal words.</li>
+        <li>Assistant asks only the missing questions needed for a first version.</li>
+        <li>Assistant creates a landing page outline.</li>
+        <li>Assistant creates a practical launch checklist.</li>
+        <li>User tests the outline with three workshop hosts or potential attendees.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Data And Integrations</h2>
+      <div class="grid">
+        <div class="item">
+          <p class="tag known">known</p>
+          <h3>Input</h3>
+          <p>User-provided workshop notes and constraints.</p>
+        </div>
+        <div class="item">
+          <p class="tag unknown">unknown</p>
+          <h3>Storage</h3>
+          <p>No database is specified. First version can work as copy/paste text.</p>
+        </div>
+        <div class="item">
+          <p class="tag unknown">unknown</p>
+          <h3>Accounts</h3>
+          <p>No login provider is specified.</p>
+        </div>
+        <div class="item">
+          <p class="tag unknown">unknown</p>
+          <h3>Payments and email</h3>
+          <p>Not decided. Do not build until the test confirms demand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Risks And Open Questions</h2>
+      <ul>
+        <li><strong class="risk">risk:</strong> Building payments, login, or database too early may slow down the first test.</li>
+        <li><strong class="unknown">unknown:</strong> Who is the first workshop niche: fitness, cooking, education, business, art?</li>
+        <li><strong class="unknown">unknown:</strong> Does the user need a website, a PDF, or just a shareable text outline for the first test?</li>
+        <li><strong class="risk">risk:</strong> Do not paste private attendee data or payment credentials into an AI agent.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Next MVP Step</h2>
+      <p>Create one landing page outline and checklist from a real workshop idea, then ask three workshop hosts whether it helps them decide what to publish next.</p>
+    </section>
+  </main>
+</body>
+</html>
