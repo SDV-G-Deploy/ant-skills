@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.5 - Human-first quick start
+
+- Reworked README and README.ru around choosing, copying, and installing a skill quickly.
+- Added docs/quick-start.md for copy/paste and CLI use.
+- Moved maintainer/release details lower in the public entry flow.
+
 ## 0.3.4 - Install docs and release verification
 
 - Added Windows/PowerShell install notes.

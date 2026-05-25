@@ -1,7 +1,7 @@
 ---
 name: ant-compact
 description: Compact plain-language communication layer for AI coding agents. Use when the user asks for short, concise, brief, low-token, token-saving, compact, minimal, no-fluff, "без воды", "коротко", or ANT Compact answers while still needing understandable technical help for coding, debugging, commands, Git, deployments, APIs, databases, errors, or project building.
-version: 0.3.4
+version: 0.3.5
 license: MIT
 tags:
   - communication

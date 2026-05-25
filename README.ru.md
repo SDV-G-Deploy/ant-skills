@@ -1,64 +1,36 @@
-# ANT — Accessible Non-Technical Translator
+# ANT — AI Non-Technical Translator
 
-ANT Skills — это бесплатный open-source skill pack для AI-агентов. Он даёт агентам три режима коммуникации: понятный обычный язык, короткий режим и ультракороткий low-words режим.
+ANT — это маленький набор готовых инструкций для AI-агентов, которые помогают строить проекты без технического тумана.
 
-**Короткое описание:** Plain-language режимы для AI coding agents: clear, compact, low-words.
+Дай ANT в Codex, Claude, Cursor, Hermes, OpenClaw, Copilot или другой coding agent, если хочешь, чтобы агент объяснял техническую работу понятно, безопасно и на твоём языке.
 
-**Слоган:** ANT helps AI agents build with you, not talk over you.  
-По-русски: **ANT помогает AI-агентам строить вместе с человеком, а не говорить поверх него.**
+## Выбери свой ANT
 
-ANT подходит для non-technical builders: фаундеров, продактов, дизайнеров, маркетологов, студентов, начинающих разработчиков и всех, кто строит сайты, ботов, приложения, автоматизации или внутренние инструменты через AI.
-
-Важно: ANT — это не “упрощение для глупых”. Это слой коммуникации. Сначала смысл, потом действия, потом проверка, а технические детали — отдельно и по делу.
-
-## Что меняет ANT
-
-После установки агент должен:
-
-- отвечать на языке пользователя;
-- объяснять технические действия простыми словами;
-- переводить или пояснять англоязычные термины при первом появлении;
-- не писать “просто запусти”, “очевидно”, “тривиально”;
-- объяснять команды: где их запускать, зачем, какая точная команда, как понять, что всё прошло хорошо;
-- после изменений в коде говорить, что изменилось и как это проверить;
-- просить подтверждение перед опасными действиями: удалить данные, сделать force push, поменять секреты, биллинг, права доступа, деплой в production;
-- выносить глубокую технику в блок “Техническое приложение”.
-
-## Режимы
-
-ANT теперь можно использовать в трёх режимах:
-
-| Режим | Для чего | Типичный размер |
+| Выбери | Когда подходит | Использовать |
 |---|---|---|
-| `ant-plain-language` | понятные объяснения для non-technical builders | средний |
-| `ant-compact` | коротко, но всё ещё понятно | 60–160 слов |
-| `ant-low-words` | максимальная экономия слов / очень кратко, но уважительно | 20–80 слов |
+| ANT Plain Language | “Объясни, что происходит, чтобы я понял.” | [открыть](skills/ant-plain-language/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-plain-language/SKILL.md) |
+| ANT Compact | “Коротко, но без потери смысла.” | [открыть](skills/ant-compact/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-compact/SKILL.md) |
+| ANT Low Words | “Максимально мало слов.” | [открыть](skills/ant-low-words/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-low-words/SKILL.md) |
 
-Ключевая идея: **не просто меньше слов, а меньше слов без потери действия, проверки и безопасности.**
+Если сомневаешься, начни с **ANT Plain Language**.
 
-Подробнее: [docs/ant-modes.ru.md](docs/ant-modes.ru.md) и [docs/token-saving.ru.md](docs/token-saving.ru.md).
+## Самый быстрый способ
 
-## Что внутри
+### Вариант 1: скопировать и вставить
+
+1. Открой один из трёх skill-файлов выше.
+2. Скопируй текст.
+3. Вставь его агенту как инструкцию.
+
+Можно написать:
 
 ```text
-skills/ant-plain-language/SKILL.md             # основной portable Agent Skill
-skills/ant-compact/SKILL.md                    # краткий режим
-skills/ant-low-words/SKILL.md                  # ultra-compact режим
-skills/ant-plain-language/references/          # словари, risk gates, правила коммуникации
-variants/claude-output-style/                  # always-on стили для Claude Code
-variants/cursor-rules/                         # правила для Cursor
-variants/agents-md/                            # вставки для AGENTS.md / инструкций проекта
-variants/github-copilot/README.md              # заметки для GitHub Copilot / VS Code
-variants/hermes/README.md                      # заметки для Hermes Agent
-variants/prompt-only/                          # промпты для ручной вставки
-evals/                                          # ручные тесты качества
-tools/                                          # маленькие скрипты для мейнтейнеров
-docs/                                           # режимы, token-saving, совместимость, strategy docs
+Используй это как стиль общения для этого проекта.
 ```
 
-## Быстрая установка
+Так можно пользоваться ANT даже в инструменте, где нет формальной установки skills.
 
-Через skills-compatible CLI:
+### Вариант 2: установить через skills CLI
 
 ```bash
 npx skills add SDV-G-Deploy/ant-skills --skill ant-plain-language
@@ -66,189 +38,82 @@ npx skills add SDV-G-Deploy/ant-skills --skill ant-compact
 npx skills add SDV-G-Deploy/ant-skills --skill ant-low-words
 ```
 
-`SDV-G-Deploy/ant-skills` нужно заменить, если устанавливаешь из форка.
+### Вариант 3: скачать zip
 
-## Локальная установка через helper
+Открой последний релиз:
 
-Для теста из папки репозитория:
+https://github.com/SDV-G-Deploy/ant-skills/releases/latest
 
-```bash
-./tools/install-local.sh agents ant-plain-language
-./tools/install-local.sh claude ant-compact
-./tools/install-local.sh all ant-low-words
-```
-
-Если skill уже есть в целевом месте, installer остановится и не перезапишет его молча. Чтобы заменить существующую папку, добавь `--force`; старая версия будет перенесена в timestamped backup.
-
-На Windows используй skills-compatible CLI или смотри [docs/install-windows.md](docs/install-windows.md). Helper script рассчитан на Bash и лучше всего подходит для Git Bash, WSL, Linux или macOS.
-
-## Ручная установка
-
-### Codex / generic Agent Skills
-
-Скопируй нужную папку:
+И скачай нужный файл:
 
 ```text
-skills/ant-plain-language
-skills/ant-compact
-skills/ant-low-words
+ant-plain-language.zip
+ant-compact.zip
+ant-low-words.zip
 ```
 
-в соответствующее место:
+## Что меняет ANT
 
-```text
-~/.agents/skills/ant-plain-language
-~/.agents/skills/ant-compact
-~/.agents/skills/ant-low-words
-.agents/skills/ant-plain-language
-.agents/skills/ant-compact
-.agents/skills/ant-low-words
-```
-
-Пути с `~` — личная установка. Пути внутри проекта — установка для конкретного репозитория или команды.
-
-### Claude Code
-
-Скопируй нужные папки:
-
-```text
-skills/ant-plain-language
-skills/ant-compact
-skills/ant-low-words
-```
-
-сюда:
-
-```text
-~/.claude/skills/ant-plain-language
-~/.claude/skills/ant-compact
-~/.claude/skills/ant-low-words
-```
-
-Если хочется, чтобы стиль был включён почти всегда, дополнительно скопируй:
-
-```text
-variants/claude-output-style/ANT.md
-variants/claude-output-style/ANT-Compact.md
-variants/claude-output-style/ANT-Low-Words.md
-```
-
-сюда:
-
-```text
-~/.claude/output-styles/
-```
-
-После этого выбери нужный стиль в Claude Code.
-
-### Cursor
-
-Скопируй нужное правило:
-
-```text
-variants/cursor-rules/ant-plain-language.mdc
-variants/cursor-rules/ant-compact.mdc
-variants/cursor-rules/ant-low-words.mdc
-```
-
-сюда:
-
-```text
-.cursor/rules/ant-plain-language.mdc
-.cursor/rules/ant-compact.mdc
-.cursor/rules/ant-low-words.mdc
-```
-
-Это хороший вариант, если ANT должен применяться ко всем ответам внутри проекта.
-
-### Hermes Agent
-
-Скопируй нужный skill:
-
-```text
-skills/ant-plain-language
-skills/ant-compact
-skills/ant-low-words
-```
-
-сюда:
-
-```text
-~/.hermes/skills/ant-plain-language
-~/.hermes/skills/ant-compact
-~/.hermes/skills/ant-low-words
-```
-
-### VS Code / GitHub Copilot
-
-Скопируй skill в один из поддерживаемых путей:
-
-```text
-.github/skills/ant-plain-language
-.github/skills/ant-compact
-.github/skills/ant-low-words
-.agents/skills/ant-plain-language
-.agents/skills/ant-compact
-.agents/skills/ant-low-words
-~/.copilot/skills/ant-plain-language
-~/.copilot/skills/ant-compact
-~/.copilot/skills/ant-low-words
-~/.agents/skills/ant-plain-language
-~/.agents/skills/ant-compact
-~/.agents/skills/ant-low-words
-```
-
-## Пример “до / после”
-
-До ANT:
+Без ANT:
 
 > Run npm install, rebuild, then check the endpoint.
 
-После ANT:
+С ANT Plain Language:
 
-> Проект не нашёл библиотеки, которые нужны ему для запуска. Открой терминал в папке проекта и выполни `npm install`. Эта команда скачает нужные библиотеки. Если всё хорошо, установка закончится без красных ошибок. После этого запусти проект снова. Если ошибка останется — пришли новый текст ошибки, и я переведу её на нормальный язык.
+> Проект не нашёл библиотеки, которые нужны ему для запуска. Открой терминал в папке проекта и выполни `npm install`. Эта команда скачает нужные библиотеки. Если всё хорошо, установка закончится без красных ошибок. После этого запусти проект снова.
 
-
-## Пример ANT Compact
-
-Обычный ответ:
-
-> You need to install the missing dependency and then restart the development server.
-
-ANT Compact:
+С ANT Compact:
 
 > Смысл: проект не нашёл библиотеку.  
 > Действие: в папке проекта запусти `npm install`, потом `npm run dev`.  
 > Проверка: сайт запускается без красной ошибки.
 
-## Пример ANT Low Words
+С ANT Low Words:
 
 > Причина: нет `DATABASE_URL`.  
 > Фикс: добавь его в `.env`.  
 > Проверка: `npm run dev` без env-ошибки.
 
-## Почему лучше технические имена `ant-plain-language`, `ant-compact`, `ant-low-words`
+## Что ANT просит агента делать
 
-ANT / муравей — хорошее название для бренда. Но пакеты лучше назвать `ant-plain-language`, `ant-compact`, `ant-low-words`, потому что просто `ant` легко спутать с Ant Design и другими developer-инструментами.
+- Отвечать на языке пользователя.
+- Объяснять технические действия простыми словами.
+- Говорить, что изменилось и как это проверить.
+- Не переводить точные команды, имена файлов и тексты ошибок.
+- Спрашивать подтверждение перед опасными действиями: удалить данные, сделать force push, поменять секреты, биллинг, права доступа или деплой в production.
+- Не выкидывать действие, проверку и безопасность ради краткости.
 
-Расшифровки:
+ANT — это не “упрощение для глупых”. Это слой коммуникации: сначала смысл, потом действия, потом проверка, а технические детали — отдельно и по делу.
 
-- **Accessible Non-Technical Translator**
-- **AI Non-Technical Translator**
-- **Agent Non-Technical Translator**
+## Ещё помощь
 
-## Принципы проекта
+- [Быстрый старт](docs/quick-start.md)
+- [Каталог skills](docs/skill-catalog.md)
+- [Примеры до/после](examples/before-after.ru.md)
+- [English README](README.md)
+- [Windows install notes](docs/install-windows.md)
 
-1. Простой язык не значит неточный язык.
-2. Non-technical не значит “менее умный”.
-3. Агент должен объяснять последствия, а не только команды.
-4. Перед опасными действиями нужна пауза и подтверждение.
-5. Технические детали нужны, но они не должны быть первой стеной на пути пользователя.
+## Для мейнтейнеров и продвинутых пользователей
 
-## Что делать дальше
+В репозитории также есть инфраструктура качества и релизов:
 
-Начни с [docs/skill-catalog.md](docs/skill-catalog.md), затем посмотри [examples/before-after.ru.md](examples/before-after.ru.md) и [evals/manual-evals.md](evals/manual-evals.md). Для проверки архивов смотри [docs/release-verification.md](docs/release-verification.md), для осторожной оценки экономии слов — [docs/token-saving-benchmarks.md](docs/token-saving-benchmarks.md). Для улучшений через pull request смотри [CONTRIBUTING.md](CONTRIBUTING.md).
+```text
+skills/                  # основные Agent Skill папки
+variants/                # Claude, Cursor, AGENTS.md, Copilot, Hermes, prompt-only варианты
+docs/                    # режимы, установка, проверка релизов, token-saving notes
+evals/                   # ручные evals и rubric
+tools/                   # packaging, lint, archive checks, local install helper
+.github/                 # CI, issue templates, PR template
+```
+
+Полезные maintainer docs:
+
+- [Release verification](docs/release-verification.md)
+- [Token-saving benchmark guide](docs/token-saving-benchmarks.md)
+- [Contributing](CONTRIBUTING.md)
+- [Security](SECURITY.md)
 
 ## Лицензия
 
 MIT. Можно использовать, форкать, переводить и адаптировать.
+
