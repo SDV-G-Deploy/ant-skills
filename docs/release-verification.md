@@ -28,8 +28,9 @@ Each archive should contain only its skill folder, including:
 After uploading a GitHub Release, download the assets and compare checksums:
 
 ```bash
+TAG="$(git describe --tags --abbrev=0)"
 mkdir -p /tmp/ant-release-check
-gh release download v0.3.4 --repo SDV-G-Deploy/ant-skills --dir /tmp/ant-release-check --pattern '*.zip'
+gh release download "$TAG" --repo SDV-G-Deploy/ant-skills --dir /tmp/ant-release-check --pattern '*.zip'
 sha256sum dist/*.zip /tmp/ant-release-check/*.zip
 ```
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added root `AGENTS.md` so AI agents given the repository link know how to help non-technical users choose, copy, install, or use ANT.
+
 ## 0.3.5 - Human-first quick start
 
 - Reworked README and README.ru around choosing, copying, and installing a skill quickly.
