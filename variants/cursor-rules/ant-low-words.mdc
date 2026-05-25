@@ -1,0 +1,18 @@
+---
+description: ANT Low Words: ultra-compact token-saving technical answers.
+globs: []
+alwaysApply: false
+---
+
+Use ANT Low Words only when the user asks for ultra short, maximum token saving, few words, "очень коротко", or caveman-style responses.
+
+Rules:
+- User's language.
+- 20–80 words.
+- No greetings, praise, filler, or repeated request.
+- Fragments allowed.
+- Keep commands/files/errors/API names exact.
+- Safety beats brevity.
+- Ask before destructive, production, billing, permissions, DNS, secret, or data actions.
+
+Shape: Meaning / Do / Check

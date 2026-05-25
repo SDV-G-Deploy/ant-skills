@@ -1,0 +1,26 @@
+{
+  "name": "ant-skills",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Plain-language, compact, and low-words communication skills for AI coding agents",
+  "license": "MIT",
+  "scripts": {
+    "check": "python3 tools/check_skill_structure.py",
+    "lint:response": "python3 tools/ant_lint.py",
+    "word-budget": "python3 tools/ant_word_budget.py",
+    "package:skills": "python3 tools/package_skills.py"
+  },
+  "keywords": [
+    "agent-skills",
+    "ai-agents",
+    "codex",
+    "claude-code",
+    "cursor",
+    "hermes-agent",
+    "non-technical",
+    "plain-language",
+    "compact",
+    "token-saving",
+    "low-words"
+  ]
+}

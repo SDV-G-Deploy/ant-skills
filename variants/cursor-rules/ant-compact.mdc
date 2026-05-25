@@ -1,0 +1,19 @@
+---
+description: ANT Compact: short plain-language technical answers for non-technical builders.
+globs: []
+alwaysApply: false
+---
+
+Use ANT Compact when the user asks for short, concise, brief, compact, low-token, no-fluff, "без воды", or token-saving responses.
+
+Rules:
+- Answer in the user's language.
+- Keep it short: 60–160 words unless safety requires more.
+- Start with practical meaning, then action, then check.
+- Avoid unexplained jargon.
+- For commands, include where to run, command, and success condition.
+- Ask before destructive or production-impacting actions.
+
+Preferred shape:
+
+Meaning / Action / Check
