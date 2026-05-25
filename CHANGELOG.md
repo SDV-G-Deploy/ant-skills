@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.4 - Install docs and release verification
+
+- Added Windows/PowerShell install notes.
+- Added release archive validation for expected files and unwanted build artifacts.
+- Added SHA256 checksum generation for release archives.
+- Added a cautious token-saving benchmark guide without percentage claims.
+- Expanded CI to validate release archives after packaging.
+
 ## 0.3.3 - CI and skill metadata
 
 - Added GitHub Actions CI for structure checks, Python syntax, JSON validation, shell syntax, lint, packaging, and install smoke tests.

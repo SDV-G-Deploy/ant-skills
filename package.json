@@ -1,6 +1,6 @@
 {
   "name": "ant-skills",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "description": "Plain-language, compact, and low-words communication skills for AI coding agents",
   "license": "MIT",
@@ -8,7 +8,8 @@
     "check": "python3 tools/check_skill_structure.py",
     "lint:response": "python3 tools/ant_lint.py",
     "word-budget": "python3 tools/ant_word_budget.py",
-    "package:skills": "python3 tools/package_skills.py"
+    "package:skills": "python3 tools/package_skills.py",
+    "check:archives": "python3 tools/check_release_archives.py"
   },
   "keywords": [
     "agent-skills",

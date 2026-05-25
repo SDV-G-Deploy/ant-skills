@@ -81,6 +81,8 @@ For local testing from this repository:
 
 If a skill already exists at the target path, the installer stops instead of overwriting it. Add `--force` to replace it; the previous folder will be moved to a timestamped backup first.
 
+On Windows, use the skills-compatible CLI or follow [docs/install-windows.md](docs/install-windows.md). The helper script is Bash-first and is best used from Git Bash, WSL, Linux, or macOS.
+
 ## Manual install
 
 ### Generic Agent Skills / Codex-style layout
@@ -215,6 +217,8 @@ Possible expansions:
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). The easiest contribution is a before/after example, a glossary entry in another language, or a compact-mode eval case.
+
+For release archive verification, see [docs/release-verification.md](docs/release-verification.md). For cautious token-saving measurement, see [docs/token-saving-benchmarks.md](docs/token-saving-benchmarks.md).
 
 ## License
 

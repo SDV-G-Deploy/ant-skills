@@ -36,6 +36,9 @@ jobs:
       - name: Package skills
         run: python3 tools/package_skills.py
 
+      - name: Validate release archives
+        run: python3 tools/check_release_archives.py
+
       - name: Smoke test local installer
         run: |
           tmp="$(mktemp -d)"

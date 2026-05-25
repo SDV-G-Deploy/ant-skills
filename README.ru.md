@@ -80,6 +80,8 @@ npx skills add SDV-G-Deploy/ant-skills --skill ant-low-words
 
 Если skill уже есть в целевом месте, installer остановится и не перезапишет его молча. Чтобы заменить существующую папку, добавь `--force`; старая версия будет перенесена в timestamped backup.
 
+На Windows используй skills-compatible CLI или смотри [docs/install-windows.md](docs/install-windows.md). Helper script рассчитан на Bash и лучше всего подходит для Git Bash, WSL, Linux или macOS.
+
 ## Ручная установка
 
 ### Codex / generic Agent Skills
@@ -245,7 +247,7 @@ ANT / муравей — хорошее название для бренда. Н
 
 ## Что делать дальше
 
-Начни с [docs/skill-catalog.md](docs/skill-catalog.md), затем посмотри [examples/before-after.ru.md](examples/before-after.ru.md) и [evals/manual-evals.md](evals/manual-evals.md). Для улучшений через pull request смотри [CONTRIBUTING.md](CONTRIBUTING.md).
+Начни с [docs/skill-catalog.md](docs/skill-catalog.md), затем посмотри [examples/before-after.ru.md](examples/before-after.ru.md) и [evals/manual-evals.md](evals/manual-evals.md). Для проверки архивов смотри [docs/release-verification.md](docs/release-verification.md), для осторожной оценки экономии слов — [docs/token-saving-benchmarks.md](docs/token-saving-benchmarks.md). Для улучшений через pull request смотри [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Лицензия
 
