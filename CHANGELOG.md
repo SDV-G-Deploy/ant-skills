@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.3 - CI and skill metadata
+
+- Added GitHub Actions CI for structure checks, Python syntax, JSON validation, shell syntax, lint, packaging, and install smoke tests.
+- Added `agents/openai.yaml` metadata for each skill.
+- Extended the structure checker to verify skill UI metadata.
+
 ## 0.3.2 - Installer safety and audit fixes
 
 - Made `tools/install-local.sh` executable for documented `./tools/install-local.sh` usage.

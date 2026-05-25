@@ -31,6 +31,13 @@ REQUIRED_BY_SKILL = {
     ],
 }
 
+REQUIRED_METADATA_FIELDS = [
+    "interface:",
+    "display_name:",
+    "short_description:",
+    "default_prompt:",
+]
+
 
 def fail(message: str) -> int:
     print(f"FAIL: {message}")
@@ -70,6 +77,18 @@ def main() -> int:
         for required in required_phrases:
             if required not in text:
                 return fail(f"{skill_name}: missing section or phrase: {required}")
+
+        metadata_file = skill_file.parent / "agents" / "openai.yaml"
+        if not metadata_file.exists():
+            return fail(f"{skill_name}: missing agents/openai.yaml")
+
+        metadata = metadata_file.read_text(encoding="utf-8")
+        for field in REQUIRED_METADATA_FIELDS:
+            if field not in metadata:
+                return fail(f"{skill_name}: openai.yaml missing field: {field}")
+
+        if f"${skill_name}" not in metadata:
+            return fail(f"{skill_name}: openai.yaml default_prompt must mention ${skill_name}")
 
     print("PASS: ANT skill structure looks OK")
     return 0

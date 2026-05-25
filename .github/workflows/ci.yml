@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate structure
+        run: python3 tools/check_skill_structure.py
+
+      - name: Validate Python tools
+        run: python3 -m py_compile tools/*.py
+
+      - name: Validate package metadata
+        run: python3 -m json.tool package.json >/dev/null
+
+      - name: Validate shell helper syntax
+        run: bash -n tools/install-local.sh
+
+      - name: Run ANT lint
+        run: python3 tools/ant_lint.py
+
+      - name: Package skills
+        run: python3 tools/package_skills.py
+
+      - name: Smoke test local installer
+        run: |
+          tmp="$(mktemp -d)"
+          HOME="$tmp" ./tools/install-local.sh all ant-plain-language
+          test -d "$tmp/.agents/skills/ant-plain-language"
+          test -d "$tmp/.claude/skills/ant-plain-language"
+          test -f "$tmp/.claude/output-styles/ANT.md"
+          test -d "$tmp/.hermes/skills/ant-plain-language"
+          test -d "$tmp/.copilot/skills/ant-plain-language"
+          rm -rf "$tmp"
+
+      - name: Smoke test installer preflight
+        run: |
+          tmp="$(mktemp -d)"
+          mkdir -p "$tmp/.claude/skills/ant-compact"
+          set +e
+          HOME="$tmp" ./tools/install-local.sh all ant-compact
+          code="$?"
+          set -e
+          test "$code" -eq 3
+          test ! -e "$tmp/.agents/skills/ant-compact"
+          rm -rf "$tmp"

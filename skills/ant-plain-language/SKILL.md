@@ -1,7 +1,7 @@
 ---
 name: ant-plain-language
 description: Plain-language communication layer for AI coding agents. Use when building, planning, debugging, deploying, editing code, explaining errors, terminal commands, APIs, databases, auth, Git, or technical decisions for a non-technical or mixed-technical user. Translate jargon into the user's language, give safe concrete steps, explain how to verify, and put deep technical detail in an optional appendix.
-version: 0.3.2
+version: 0.3.3
 license: MIT
 tags:
   - communication

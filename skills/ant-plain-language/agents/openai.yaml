@@ -1,0 +1,7 @@
+interface:
+  display_name: "ANT Plain Language"
+  short_description: "Plain-language help for technical work"
+  default_prompt: "Use $ant-plain-language to explain this technical work in clear language with safe next steps."
+
+policy:
+  allow_implicit_invocation: true

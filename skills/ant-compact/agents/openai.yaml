@@ -1,0 +1,7 @@
+interface:
+  display_name: "ANT Compact"
+  short_description: "Concise technical help without losing safety"
+  default_prompt: "Use $ant-compact to answer briefly while keeping the next action, check, and risks clear."
+
+policy:
+  allow_implicit_invocation: true

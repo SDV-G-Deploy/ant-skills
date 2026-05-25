@@ -1,0 +1,7 @@
+interface:
+  display_name: "ANT Low Words"
+  short_description: "Ultra-short technical updates with safety"
+  default_prompt: "Use $ant-low-words to give the shortest useful answer with commands, checks, and safety intact."
+
+policy:
+  allow_implicit_invocation: true
