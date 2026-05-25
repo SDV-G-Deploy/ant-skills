@@ -29,6 +29,13 @@ REQUIRED_BY_SKILL = {
         "Delete list",
         "Keep list",
     ],
+    "ant-product-map": [
+        "ANT Product Map",
+        "Output Contract",
+        "HTML Map Rules",
+        "Safety Gates",
+        "Quality Bar",
+    ],
 }
 
 REQUIRED_METADATA_FIELDS = [

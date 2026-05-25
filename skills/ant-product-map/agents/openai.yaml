@@ -1,0 +1,7 @@
+interface:
+  display_name: "ANT Product Map"
+  short_description: "HTML product maps for builders"
+  default_prompt: "Use $ant-product-map to turn this idea or repo into a clear HTML product map for a non-technical builder."
+
+policy:
+  allow_implicit_invocation: true

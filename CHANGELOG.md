@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0 - Product maps
+
+- Added `ant-product-map`, a new skill for turning ideas, repo context, app flows, MVP notes, or product discussions into simple evidence-based HTML product maps for non-technical builders.
+- Added a bundled product-map HTML template and UI metadata for the new skill.
+- Updated README, quick start, compatibility notes, catalog, installer whitelist, structure checks, and release archive validation for four skills.
+
 ## 0.3.6 - Pre-public hardening
 
 - Added root `AGENTS.md` so AI agents given the repository link know how to help non-technical users choose, copy, install, or use ANT.

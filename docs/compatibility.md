@@ -8,6 +8,7 @@ ANT is designed around the portable Agent Skills pattern: a folder containing `S
 skills/ant-plain-language/SKILL.md
 skills/ant-compact/SKILL.md
 skills/ant-low-words/SKILL.md
+skills/ant-product-map/SKILL.md
 ```
 
 Use these for skills-compatible agents.
@@ -34,5 +35,6 @@ For ANT, both are useful:
 - Install `ant-plain-language` for most non-technical users.
 - Install `ant-compact` when the user often asks for short answers.
 - Install `ant-low-words` only when token-saving is more important than teaching.
+- Install `ant-product-map` when the user wants product ideas, app flows, or repo context turned into a simple HTML map.
 
 All modes keep safety warnings.

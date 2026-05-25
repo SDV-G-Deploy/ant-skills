@@ -4,6 +4,8 @@ ANT — это маленький набор готовых инструкций
 
 Дай ANT в Codex, Claude, Cursor, Hermes, OpenClaw, Copilot или другой coding agent, если хочешь, чтобы агент объяснял техническую работу понятно, безопасно и на твоём языке.
 
+В ANT также есть skill для продуктовых HTML-карт: он превращает идею или хаотичный контекст проекта в простую схему, которую не-технарю можно быстро понять и показать дальше.
+
 ## Выбери свой ANT
 
 | Выбери | Когда подходит | Использовать |
@@ -11,6 +13,7 @@ ANT — это маленький набор готовых инструкций
 | ANT Plain Language | “Объясни, что происходит, чтобы я понял.” | [открыть](skills/ant-plain-language/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-plain-language/SKILL.md) |
 | ANT Compact | “Коротко, но без потери смысла.” | [открыть](skills/ant-compact/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-compact/SKILL.md) |
 | ANT Low Words | “Максимально мало слов.” | [открыть](skills/ant-low-words/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-low-words/SKILL.md) |
+| ANT Product Map | “Собери из идеи понятную HTML-карту продукта.” | [открыть](skills/ant-product-map/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-product-map/SKILL.md) |
 
 Если сомневаешься, начни с **ANT Plain Language**.
 
@@ -18,7 +21,7 @@ ANT — это маленький набор готовых инструкций
 
 ### Вариант 1: скопировать и вставить
 
-1. Открой один из трёх skill-файлов выше.
+1. Открой один из skill-файлов выше.
 2. Скопируй текст.
 3. Вставь его агенту как инструкцию.
 
@@ -36,6 +39,7 @@ ANT — это маленький набор готовых инструкций
 npx skills add SDV-G-Deploy/ant-skills --skill ant-plain-language
 npx skills add SDV-G-Deploy/ant-skills --skill ant-compact
 npx skills add SDV-G-Deploy/ant-skills --skill ant-low-words
+npx skills add SDV-G-Deploy/ant-skills --skill ant-product-map
 ```
 
 ### Вариант 3: скачать zip
@@ -50,6 +54,7 @@ https://github.com/SDV-G-Deploy/ant-skills/releases/latest
 ant-plain-language.zip
 ant-compact.zip
 ant-low-words.zip
+ant-product-map.zip
 ```
 
 ## Что меняет ANT
@@ -73,6 +78,10 @@ ant-low-words.zip
 > Причина: нет `DATABASE_URL`.  
 > Фикс: добавь его в `.env`.  
 > Проверка: `npm run dev` без env-ошибки.
+
+С ANT Product Map:
+
+> Создаёт небольшой `product-map.html`: цель продукта, пользователь, экраны, flow, данные/интеграции, вопросы, риски и следующий MVP-шаг.
 
 ## Что ANT просит агента делать
 
@@ -116,4 +125,3 @@ tools/                   # packaging, lint, archive checks, local install helper
 ## Лицензия
 
 MIT. Можно использовать, форкать, переводить и адаптировать.
-

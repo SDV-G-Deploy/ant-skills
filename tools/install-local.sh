@@ -11,11 +11,11 @@ if [[ "${3:-}" == "--force" ]]; then
 fi
 
 case "$SKILL_NAME" in
-  ant-plain-language|ant-compact|ant-low-words)
+  ant-plain-language|ant-compact|ant-low-words|ant-product-map)
     ;;
   *)
     echo "Unknown skill: $SKILL_NAME" >&2
-    echo "Use: ant-plain-language | ant-compact | ant-low-words" >&2
+    echo "Use: ant-plain-language | ant-compact | ant-low-words | ant-product-map" >&2
     exit 2
     ;;
 esac
