@@ -18,7 +18,7 @@ ANT ships as a small mode family:
 |---|---|---|
 | `ant-plain-language` | clear explanations for non-technical builders | medium |
 | `ant-compact` | short but still understandable | 60–160 words |
-| `ant-low-words` | maximum word saving / caveman-inspired but respectful | 20–80 words |
+| `ant-low-words` | maximum word saving / terse but respectful | 20–80 words |
 
 The goal is not just fewer words. The goal is **fewer words without losing action, verification, or safety**.
 
@@ -57,9 +57,9 @@ tools/                                          # helper scripts for maintainers
 docs/                                           # modes, token-saving notes, compatibility, strategy docs
 ```
 
-## Quick install after publishing
+## Quick install
 
-After this repository is published on GitHub, a skills-compatible installer can use:
+Use a skills-compatible installer:
 
 ```bash
 npx skills add SDV-G-Deploy/ant-skills --skill ant-plain-language

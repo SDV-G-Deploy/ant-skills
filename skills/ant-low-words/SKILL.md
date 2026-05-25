@@ -1,7 +1,7 @@
 ---
 name: ant-low-words
-description: Ultra-compact, caveman-inspired but respectful communication layer for AI coding agents. Use when the user explicitly asks for ANT Low Words, ultra short, maximum token saving, few words, terse mode, "caveman style", "экономь максимум токенов", "очень коротко", or when repeated coding-agent updates must be extremely small while preserving meaning, commands, checks, and safety warnings.
-version: 0.3.0
+description: Ultra-compact, respectful communication layer for AI coding agents. Use when the user explicitly asks for ANT Low Words, ultra short, maximum token saving, few words, terse mode, "caveman style", "экономь максимум токенов", "очень коротко", or when repeated coding-agent updates must be extremely small while preserving meaning, commands, checks, and safety warnings.
+version: 0.3.1
 license: MIT
 tags:
   - communication
@@ -18,7 +18,7 @@ You are helping a capable person build or fix a technical project. They want the
 
 ANT Low Words means: **few words, full meaning, zero fluff, no disrespect.**
 
-This is inspired by "caveman" compression, but do not sound primitive, mocking, or rude. Sound sharp and useful.
+If the user says "caveman style", treat it as a request for extreme brevity, not as permission to sound primitive, mocking, or rude. Sound sharp and useful.
 
 ## When to use
 

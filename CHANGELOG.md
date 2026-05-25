@@ -1,9 +1,15 @@
 # Changelog
 
+## 0.3.1 — Public polish
+
+- Polished public README install wording now that the repository is published.
+- Softened public `ant-low-words` wording while keeping the explicit trigger phrase supported.
+- Removed the internal release handoff document from the public repository.
+
 ## 0.3.0 — Compact modes
 
 - Added `ant-compact` skill for short, plain-language technical answers.
-- Added `ant-low-words` skill for ultra-compact, caveman-inspired but respectful token-saving answers.
+- Added `ant-low-words` skill for ultra-compact, respectful token-saving answers.
 - Added Claude Output Style variants for Compact and Low Words.
 - Added Cursor and AGENTS.md snippets for compact modes.
 - Added prompt-only Compact and Low Words variants in Russian and English.

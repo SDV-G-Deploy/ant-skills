@@ -63,9 +63,9 @@ Fix: create `.env`, add `DATABASE_URL`.
 Check: `npm run dev` without env error.
 ```
 
-## Why not make `caveman` the main brand?
+## Why not make extreme shorthand the main brand?
 
-`caveman` communicates compression well, but it is a weak main brand for ANT:
+Some users ask for "caveman style" when they mean extreme compression, but it is a weak main brand for ANT:
 
 - it can sound rude or mocking;
 - it clashes with respectful non-technical explanation;
@@ -75,7 +75,7 @@ Check: `npm run dev` without env error.
 Better:
 
 - public mode names: **ANT Compact** / **ANT Low Words**;
-- internal wording: “caveman-inspired compression, but respectful”.
+- internal handling: treat "caveman style" as a legacy trigger for respectful extreme brevity.
 
 ## Mode matrix
 
