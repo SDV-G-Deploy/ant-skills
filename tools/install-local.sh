@@ -21,65 +21,102 @@ case "$SKILL_NAME" in
 esac
 
 SKILL_SRC="$ROOT/skills/$SKILL_NAME"
+declare -a COPY_KINDS=()
+declare -a COPY_SRCS=()
+declare -a COPY_DESTS=()
+declare -a COPY_LABELS=()
 
-copy_skill() {
-  local dest="$1"
-  mkdir -p "$(dirname "$dest")"
-  if [[ -e "$dest" ]]; then
-    if [[ "$FORCE" != "1" ]]; then
-      echo "Refusing to overwrite existing skill: $dest" >&2
-      echo "Re-run with --force to replace it after making sure this is intentional." >&2
-      exit 3
-    fi
-    local backup="$dest.backup.$(date -u +%Y%m%dT%H%M%SZ)"
-    mv "$dest" "$backup"
-    echo "Backed up existing skill to $backup"
-  fi
-  cp -R "$SKILL_SRC" "$dest"
-  echo "Installed $SKILL_NAME to $dest"
+queue_copy() {
+  local kind="$1"
+  local src="$2"
+  local dest="$3"
+  local label="$4"
+  COPY_KINDS+=("$kind")
+  COPY_SRCS+=("$src")
+  COPY_DESTS+=("$dest")
+  COPY_LABELS+=("$label")
 }
 
-install_claude_style() {
-  mkdir -p "$HOME/.claude/output-styles"
+queue_skill() {
+  local dest="$1"
+  queue_copy "dir" "$SKILL_SRC" "$dest" "$SKILL_NAME"
+}
+
+queue_claude_style() {
   case "$SKILL_NAME" in
     ant-plain-language)
-      cp "$ROOT/variants/claude-output-style/ANT.md" "$HOME/.claude/output-styles/ANT.md"
-      echo "Installed Claude Output Style: ANT"
+      queue_copy "file" "$ROOT/variants/claude-output-style/ANT.md" "$HOME/.claude/output-styles/ANT.md" "Claude Output Style: ANT"
       ;;
     ant-compact)
-      cp "$ROOT/variants/claude-output-style/ANT-Compact.md" "$HOME/.claude/output-styles/ANT-Compact.md"
-      echo "Installed Claude Output Style: ANT Compact"
+      queue_copy "file" "$ROOT/variants/claude-output-style/ANT-Compact.md" "$HOME/.claude/output-styles/ANT-Compact.md" "Claude Output Style: ANT Compact"
       ;;
     ant-low-words)
-      cp "$ROOT/variants/claude-output-style/ANT-Low-Words.md" "$HOME/.claude/output-styles/ANT-Low-Words.md"
-      echo "Installed Claude Output Style: ANT Low Words"
+      queue_copy "file" "$ROOT/variants/claude-output-style/ANT-Low-Words.md" "$HOME/.claude/output-styles/ANT-Low-Words.md" "Claude Output Style: ANT Low Words"
       ;;
   esac
 }
 
+preflight_destinations() {
+  local dest
+  for dest in "${COPY_DESTS[@]}"; do
+    if [[ -e "$dest" && "$FORCE" != "1" ]]; then
+      echo "Refusing to overwrite existing path: $dest" >&2
+      echo "Re-run with --force to replace it after making sure this is intentional." >&2
+      exit 3
+    fi
+  done
+}
+
+install_queued() {
+  local i kind src dest label backup
+  local stamp
+  stamp="$(date -u +%Y%m%dT%H%M%SZ)"
+  for i in "${!COPY_DESTS[@]}"; do
+    kind="${COPY_KINDS[$i]}"
+    src="${COPY_SRCS[$i]}"
+    dest="${COPY_DESTS[$i]}"
+    label="${COPY_LABELS[$i]}"
+    mkdir -p "$(dirname "$dest")"
+    if [[ -e "$dest" ]]; then
+      backup="$dest.backup.$stamp"
+      mv "$dest" "$backup"
+      echo "Backed up existing path to $backup"
+    fi
+    if [[ "$kind" == "dir" ]]; then
+      cp -R "$src" "$dest"
+    else
+      cp "$src" "$dest"
+    fi
+    echo "Installed $label to $dest"
+  done
+}
+
 case "$TARGET" in
   agents|codex)
-    copy_skill "$HOME/.agents/skills/$SKILL_NAME"
+    queue_skill "$HOME/.agents/skills/$SKILL_NAME"
     ;;
   claude)
-    copy_skill "$HOME/.claude/skills/$SKILL_NAME"
-    install_claude_style
+    queue_skill "$HOME/.claude/skills/$SKILL_NAME"
+    queue_claude_style
     ;;
   hermes)
-    copy_skill "$HOME/.hermes/skills/$SKILL_NAME"
+    queue_skill "$HOME/.hermes/skills/$SKILL_NAME"
     ;;
   copilot)
-    copy_skill "$HOME/.copilot/skills/$SKILL_NAME"
+    queue_skill "$HOME/.copilot/skills/$SKILL_NAME"
     ;;
   all)
-    copy_skill "$HOME/.agents/skills/$SKILL_NAME"
-    copy_skill "$HOME/.claude/skills/$SKILL_NAME"
-    install_claude_style
-    copy_skill "$HOME/.hermes/skills/$SKILL_NAME"
-    copy_skill "$HOME/.copilot/skills/$SKILL_NAME"
+    queue_skill "$HOME/.agents/skills/$SKILL_NAME"
+    queue_skill "$HOME/.claude/skills/$SKILL_NAME"
+    queue_claude_style
+    queue_skill "$HOME/.hermes/skills/$SKILL_NAME"
+    queue_skill "$HOME/.copilot/skills/$SKILL_NAME"
     ;;
   *)
     echo "Usage: tools/install-local.sh [agents|codex|claude|hermes|copilot|all] [ant-plain-language|ant-compact|ant-low-words] [--force]" >&2
     exit 2
     ;;
 esac
+
+preflight_destinations
+install_queued

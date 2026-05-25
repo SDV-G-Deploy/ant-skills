@@ -1,7 +1,7 @@
 ---
 name: ant-low-words
 description: Ultra-compact, respectful communication layer for AI coding agents. Use when the user explicitly asks for ANT Low Words, ultra short, maximum token saving, few words, terse mode, "caveman style", "экономь максимум токенов", "очень коротко", or when repeated coding-agent updates must be extremely small while preserving meaning, commands, checks, and safety warnings.
-version: 0.3.1
+version: 0.3.2
 license: MIT
 tags:
   - communication
@@ -55,6 +55,7 @@ Risk warning: may exceed budget.
 8. Keep exact commands, file names, error text, API names.
 9. Explain jargon only if required for action.
 10. Safety beats brevity.
+11. If user pastes a secret: do not echo it; say rotate/revoke; move to safe storage.
 
 ## Default shapes
 

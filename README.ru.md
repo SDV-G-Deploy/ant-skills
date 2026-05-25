@@ -245,7 +245,7 @@ ANT / муравей — хорошее название для бренда. Н
 
 ## Что делать дальше
 
-Смотри [docs/strategy/launch-plan.ru.md](docs/strategy/launch-plan.ru.md). Там есть короткий план: как назвать репозиторий, что выложить, как собрать первые примеры и как проверить, что skill реально делает ответы понятнее.
+Начни с [docs/skill-catalog.md](docs/skill-catalog.md), затем посмотри [examples/before-after.ru.md](examples/before-after.ru.md) и [evals/manual-evals.md](evals/manual-evals.md). Для улучшений через pull request смотри [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Лицензия
 

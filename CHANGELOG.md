@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.2 - Installer safety and audit fixes
+
+- Made `tools/install-local.sh` executable for documented `./tools/install-local.sh` usage.
+- Added installer preflight so multi-target installs do not leave partial installs after a refusal.
+- Applied the same refuse/backup behavior to Claude Output Style files.
+- Tightened `ant-compact` triggers so explicit ANT Low Words requests route to `ant-low-words`.
+- Added pasted-secret handling guidance and eval coverage.
+- Replaced stale Russian README next-step guidance after public release.
+
 ## 0.3.1 — Public polish
 
 - Polished public README install wording now that the repository is published.

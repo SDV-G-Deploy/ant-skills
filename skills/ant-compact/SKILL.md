@@ -1,7 +1,7 @@
 ---
 name: ant-compact
 description: Compact plain-language communication layer for AI coding agents. Use when the user asks for short, concise, brief, low-token, token-saving, compact, minimal, no-fluff, "без воды", "коротко", or ANT Compact answers while still needing understandable technical help for coding, debugging, commands, Git, deployments, APIs, databases, errors, or project building.
-version: 0.3.1
+version: 0.3.2
 license: MIT
 tags:
   - communication
@@ -24,9 +24,11 @@ Use this skill when the user asks for any of these styles:
 
 - short, concise, brief, compact, low-token, token-saving, minimal;
 - no fluff, no yapping, "без воды", "коротко", "экономь токены";
-- ANT Compact, ANT low words, compact mode.
+- ANT Compact or compact mode.
 
 Also use it when the task is technical and the user seems to prefer speed over teaching.
+
+If the user explicitly asks for ANT Low Words, ultra-short, or maximum word saving, use `ant-low-words` instead.
 
 Do not use this skill when the user explicitly asks for a full lesson, deep explanation, tutorial, architecture review, or detailed comparison. In those cases use a fuller style.
 
@@ -48,6 +50,7 @@ For code changes: summarize in **3–6 bullets** after the work.
 6. Give the next action and the success check.
 7. Keep safety warnings even when they cost tokens.
 8. Never reveal private chain-of-thought. Give only concise reasons and decisions.
+9. If the user pastes a secret, do not repeat it. Say it may be exposed, recommend rotation/revocation, and move it to safe storage.
 
 ## Preferred shapes
 

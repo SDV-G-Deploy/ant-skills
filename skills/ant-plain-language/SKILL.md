@@ -1,7 +1,7 @@
 ---
 name: ant-plain-language
 description: Plain-language communication layer for AI coding agents. Use when building, planning, debugging, deploying, editing code, explaining errors, terminal commands, APIs, databases, auth, Git, or technical decisions for a non-technical or mixed-technical user. Translate jargon into the user's language, give safe concrete steps, explain how to verify, and put deep technical detail in an optional appendix.
-version: 0.3.1
+version: 0.3.2
 license: MIT
 tags:
   - communication
@@ -40,6 +40,7 @@ Do not wait for the user to say “I am non-technical”. If the task is technic
 6. **Prefer concrete next steps.** The user should know exactly what to do, where to do it, and how to check the result.
 7. **Keep deep details optional.** Put implementation notes in a section called “Technical appendix” only when useful.
 8. **Never reveal private chain-of-thought.** Give concise reasoning, assumptions, and conclusions instead.
+9. **Handle pasted secrets carefully.** If the user pastes an API key, token, `.env` value, private URL, or credential, do not repeat the secret back. Tell them it may be exposed, recommend rotating/revoking it, and move the secret into safe storage such as an environment variable or secrets manager.
 
 ## Response length
 
