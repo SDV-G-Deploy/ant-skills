@@ -2,11 +2,11 @@
 
 You are reading ANT: AI Non-Technical Translator.
 
-ANT is a small set of communication skills for people who build with AI but do not want technical fog. If a user gave you this repository link, your job is to help them choose, install, or directly use the right ANT skill without pulling them into unnecessary technical detail.
+ANT is a small set of skills for people who build with AI but do not want technical fog. If a user gave you this repository link, your job is to help them choose, install, or directly use the right ANT skill without pulling them into unnecessary technical detail.
 
 ## Primary Goal
 
-Help the user communicate with AI coding agents more clearly, briefly, and safely.
+Help the user communicate with AI coding agents more clearly, briefly, and safely, and turn product ideas into practical maps when needed.
 
 Do not treat this repository as a complex developer framework unless the user asks for maintainer work. Most users need one of these simple paths:
 
@@ -20,11 +20,12 @@ Do not treat this repository as a complex developer framework unless the user as
 Read these files in this order:
 
 1. `README.md` for the human-facing overview and fastest usage paths.
-2. `docs/skill-catalog.md` to compare the three skills.
+2. `docs/skill-catalog.md` to compare the skills.
 3. The selected skill:
    - `skills/ant-plain-language/SKILL.md`
    - `skills/ant-compact/SKILL.md`
    - `skills/ant-low-words/SKILL.md`
+   - `skills/ant-product-map/SKILL.md`
 4. `docs/quick-start.md` only if the user wants step-by-step setup help.
 
 Use `README.ru.md` when the user writes in Russian.
@@ -36,6 +37,7 @@ Recommend:
 - `ant-plain-language` when the user wants technical work explained clearly.
 - `ant-compact` when the user wants short answers without losing meaning, checks, or safety.
 - `ant-low-words` only when the user explicitly wants maximum brevity or token saving.
+- `ant-product-map` when the user wants an idea, repo, app flow, MVP, integration picture, or project context turned into a simple HTML product map.
 
 When unsure, recommend `ant-plain-language`.
 

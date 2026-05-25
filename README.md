@@ -4,6 +4,8 @@ ANT is a small set of ready-to-use AI agent instructions for people who build wi
 
 Give ANT to Codex, Claude, Cursor, Hermes, OpenClaw, Copilot, or another coding agent when you want it to explain technical work clearly, safely, and in your language.
 
+ANT also includes a product-map skill for turning an idea or messy project context into a simple HTML map a non-technical builder can inspect and share.
+
 ## Pick Your ANT
 
 | Choose this | When you want | Use it |
@@ -11,6 +13,7 @@ Give ANT to Codex, Claude, Cursor, Hermes, OpenClaw, Copilot, or another coding 
 | ANT Plain Language | “Explain what is happening so I understand it.” | [open](skills/ant-plain-language/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-plain-language/SKILL.md) |
 | ANT Compact | “Keep it short, but do not lose the point.” | [open](skills/ant-compact/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-compact/SKILL.md) |
 | ANT Low Words | “Use as few words as possible.” | [open](skills/ant-low-words/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-low-words/SKILL.md) |
+| ANT Product Map | “Turn this idea into a clear HTML product map.” | [open](skills/ant-product-map/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-product-map/SKILL.md) |
 
 Not sure? Start with **ANT Plain Language**.
 
@@ -18,7 +21,7 @@ Not sure? Start with **ANT Plain Language**.
 
 ### Option 1: Copy and paste
 
-1. Open one of the three skill files above.
+1. Open one of the skill files above.
 2. Copy the text.
 3. Paste it into your agent as an instruction.
 
@@ -36,6 +39,7 @@ This works even if your tool does not support formal skill installation.
 npx skills add SDV-G-Deploy/ant-skills --skill ant-plain-language
 npx skills add SDV-G-Deploy/ant-skills --skill ant-compact
 npx skills add SDV-G-Deploy/ant-skills --skill ant-low-words
+npx skills add SDV-G-Deploy/ant-skills --skill ant-product-map
 ```
 
 ### Option 3: Download a zip
@@ -50,6 +54,7 @@ Then use one of these files:
 ant-plain-language.zip
 ant-compact.zip
 ant-low-words.zip
+ant-product-map.zip
 ```
 
 ## What ANT Changes
@@ -73,6 +78,10 @@ With ANT Low Words:
 > Cause: missing `DATABASE_URL`.  
 > Fix: add it to `.env`.  
 > Check: `npm run dev` has no env error.
+
+With ANT Product Map:
+
+> Creates a small `product-map.html` that shows the product goal, user, screens, flow, data/integrations, open questions, risks, and next MVP step.
 
 ## What ANT Tells Agents To Do
 
@@ -116,4 +125,3 @@ Useful maintainer docs:
 ## License
 
 MIT. Use, fork, translate, and adapt freely.
-

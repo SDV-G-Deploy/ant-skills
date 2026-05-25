@@ -14,6 +14,7 @@ If you are not sure what to choose, use `ant-plain-language`.
 | You want clear explanations for technical work | `ant-plain-language` |
 | You want shorter answers that still keep the next step and safety | `ant-compact` |
 | You want the fewest useful words | `ant-low-words` |
+| You want an HTML map of a product idea or repo | `ant-product-map` |
 
 ## Copy/paste use
 
@@ -22,6 +23,7 @@ Open one skill file:
 - [ANT Plain Language](../skills/ant-plain-language/SKILL.md)
 - [ANT Compact](../skills/ant-compact/SKILL.md)
 - [ANT Low Words](../skills/ant-low-words/SKILL.md)
+- [ANT Product Map](../skills/ant-product-map/SKILL.md)
 
 Copy the full text and paste it into your agent with:
 
@@ -37,6 +39,7 @@ This works for tools that do not support formal skill installation.
 npx skills add SDV-G-Deploy/ant-skills --skill ant-plain-language
 npx skills add SDV-G-Deploy/ant-skills --skill ant-compact
 npx skills add SDV-G-Deploy/ant-skills --skill ant-low-words
+npx skills add SDV-G-Deploy/ant-skills --skill ant-product-map
 ```
 
 ## Download
@@ -51,6 +54,7 @@ Download one archive:
 ant-plain-language.zip
 ant-compact.zip
 ant-low-words.zip
+ant-product-map.zip
 ```
 
 ## Check that it worked
@@ -61,4 +65,3 @@ Ask your agent a technical question. A good ANT-style answer should:
 - give a concrete next action;
 - say how to check success;
 - warn before risky or destructive actions.
-

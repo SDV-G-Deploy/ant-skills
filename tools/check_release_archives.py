@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
-SKILLS = ["ant-compact", "ant-low-words", "ant-plain-language"]
+SKILLS = ["ant-compact", "ant-low-words", "ant-plain-language", "ant-product-map"]
 
 FORBIDDEN_PARTS = {"__pycache__"}
 FORBIDDEN_SUFFIXES = {".pyc", ".pyo"}
