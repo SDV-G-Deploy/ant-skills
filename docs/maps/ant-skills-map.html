@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ANT Skills Map</title>
+  <style>
+    :root { --ink:#18201b; --muted:#5b665f; --line:#cbd8cf; --paper:#f7f5ef; --panel:#fff; --green:#2f6f4e; --blue:#315f8f; --red:#9b4b42; --gold:#9a6a19; --violet:#695b9d; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--paper); color:var(--ink); } main { width:min(1180px,calc(100vw - 32px)); margin:0 auto; padding:32px 0 44px; }
+    header { display:grid; gap:10px; margin-bottom:24px; } h1 { margin:0; font-size:clamp(32px,5vw,58px); line-height:1; letter-spacing:0; } h2 { margin:0 0 14px; font-size:20px; } h3 { margin:0 0 8px; font-size:17px; } p { margin:0; color:var(--muted); line-height:1.5; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; } .pill { border:1px solid var(--line); background:#fffaf0; border-radius:999px; padding:6px 10px; color:var(--muted); font-size:13px; }
+    .grid { display:grid; gap:16px; } .skills { grid-template-columns:repeat(5,minmax(0,1fr)); } .two { grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); align-items:start; }
+    .card,.step { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; display:grid; gap:10px; align-content:start; } .card { min-height:172px; } .card strong { display:block; font-size:15px; letter-spacing:.02em; text-transform:uppercase; }
+    .tag { font-size:12px; font-weight:700; color:#fff; border-radius:999px; padding:4px 8px; width:fit-content; } .plain .tag{background:var(--green)} .compact .tag{background:var(--blue)} .low .tag{background:var(--gold)} .map .tag{background:var(--violet)} .research .tag{background:var(--red)}
+    .flow { margin:18px 0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; } .step { background:#fffdfa; border-style:dashed; min-height:118px; } .num { color:var(--muted); font-weight:700; font-size:13px; }
+    table { width:100%; border-collapse:collapse; background:var(--panel); border:1px solid var(--line); border-radius:8px; overflow:hidden; } th,td { text-align:left; border-bottom:1px solid var(--line); padding:11px 12px; vertical-align:top; } th { background:#eef3ee; font-size:13px; text-transform:uppercase; letter-spacing:.03em; } tr:last-child td { border-bottom:0; }
+    code { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:.94em; } ul { margin:0; padding-left:18px; color:var(--muted); line-height:1.5; } .note { margin-top:16px; border-left:4px solid var(--green); padding:10px 12px; background:#eef6f0; }
+    @media (max-width:980px) { .skills,.flow,.two { grid-template-columns:1fr; } .card { min-height:auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><div class="meta"><span class="pill">ANT Skills</span><span class="pill">v0.5.0</span><span class="pill">Public agent-skill map</span></div><h1>ANT Skills Map</h1><p>Five small skills for non-technical AI builders: understand technical work, keep agent communication compact, map product ideas, and run deep research without losing progress.</p></header>
+    <section class="grid skills" aria-label="Skill cards">
+      <article class="card plain"><span class="tag">Understand</span><strong>ant-plain-language</strong><p>Explains technical work in normal language while keeping real risks, checks, and decisions visible.</p></article>
+      <article class="card compact"><span class="tag">Compress</span><strong>ant-compact</strong><p>Makes answers shorter without dropping next actions, verification, or safety-critical context.</p></article>
+      <article class="card low"><span class="tag">Minimize</span><strong>ant-low-words</strong><p>Uses the fewest useful words for repeated updates, small commands, and token-sensitive agent loops.</p></article>
+      <article class="card map"><span class="tag">Map</span><strong>ant-product-map</strong><p>Turns messy product context into a static HTML map that humans and agents can inspect later.</p></article>
+      <article class="card research"><span class="tag">Research</span><strong>ant-research-run</strong><p>Splits deep research into brief, evidence, critique, synthesis, and recovery checkpoints.</p></article>
+    </section>
+    <section style="margin-top:24px"><h2>How The Skills Fit Together</h2><div class="flow"><div class="step"><div class="num">01</div><h3>Clarify</h3><p>Use <code>ant-plain-language</code>, <code>ant-compact</code>, or <code>ant-low-words</code> to make work understandable and bounded.</p></div><div class="step"><div class="num">02</div><h3>Map</h3><p>Use <code>ant-product-map</code> when the user needs a visible structure.</p></div><div class="step"><div class="num">03</div><h3>Research</h3><p>Use <code>ant-research-run</code> when a question needs evidence, multiple passes, or timeout recovery.</p></div><div class="step"><div class="num">04</div><h3>Build Next</h3><p>Future skills should turn research and maps into safe agent tasks, checks, and release decisions.</p></div></div></section>
+    <section class="grid two" style="margin-top:24px"><div><h2>Use When</h2><table><thead><tr><th>User situation</th><th>Best skill</th><th>Output</th></tr></thead><tbody><tr><td>Technical answer is correct but hard to trust.</td><td><code>ant-plain-language</code></td><td>Clear explanation with risks and checks.</td></tr><tr><td>Chat is too long or context is expensive.</td><td><code>ant-compact</code> or <code>ant-low-words</code></td><td>Short answer that keeps the action intact.</td></tr><tr><td>Product idea, repo, or workflow needs a shape.</td><td><code>ant-product-map</code></td><td>Static HTML map with facts and assumptions.</td></tr><tr><td>Research may take many sources or agent passes.</td><td><code>ant-research-run</code></td><td>Recoverable research artifacts and synthesis.</td></tr></tbody></table></div><aside class="card"><h2>Next Skill Direction</h2><ul><li><strong>ant-build-brief:</strong> one safe agent task with scope, constraints, checks, and report format.</li><li><strong>ant-risk-check:</strong> inspect an AI-made plan or app before approval.</li><li><strong>ant-test-plan:</strong> create non-technical verification steps a builder can run.</li></ul><p class="note">Working rule: research before deciding, brief before building, risk-check before approving, test-plan before trusting.</p></aside></section>
+  </main>
+</body>
+</html>
