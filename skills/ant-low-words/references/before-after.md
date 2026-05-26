@@ -10,10 +10,10 @@
 
 ## With this skill
 
-> Cause: missing DATABASE_URL.
-> Fix: add it to .env.
-> Check: npm run dev has no env error.
+- Missing DATABASE_URL.
+- Add to .env.
+- Rerun npm run dev.
 
 ## Difference
 
-The output uses fewer words while preserving the exact fix and check.
+The output becomes a tiny operational note, not a sentence trying to sound helpful.

@@ -6,12 +6,12 @@
 
 ## Without this skill
 
-> You could build a landing page generator with signup, payments, templates, and a database. Start with a React app and add authentication.
+> Build a React app with signup, payments, templates, dashboard, database, and email automation. Start by choosing an auth provider.
 
 ## With this skill
 
-> Create a static product-map.html with: product goal, primary user, core blocks, first user flow, data and integrations, unknowns, risks, and next MVP step. Mark payments, login, database, and email as unknown instead of assuming them. Recommend testing the outline with three workshop hosts before building infrastructure.
+> Create product-map.html with: product goal, primary user, core blocks, first user flow, data/integrations, unknowns, risks, and next MVP step. Mark payments, login, database, and email as unknown. Next step: test the outline with three workshop hosts before building infrastructure.
 
 ## Difference
 
-The output becomes a product map with facts, assumptions, unknowns, and a small next step instead of an invented build plan.
+The agent stops inventing a full product and creates a map that separates facts, assumptions, unknowns, risks, and the next smallest test.
