@@ -6,7 +6,7 @@ ANT is a small set of skills for people who build with AI but do not want techni
 
 ## Primary Goal
 
-Help the user communicate with AI coding agents more clearly, briefly, and safely, and turn product ideas into practical maps when needed.
+Help the user communicate with AI coding agents more clearly, briefly, and safely; turn product ideas into practical maps; and split deep research into recoverable evidence artifacts when needed.
 
 Do not treat this repository as a complex developer framework unless the user asks for maintainer work. Most users need one of these simple paths:
 
@@ -26,6 +26,7 @@ Read these files in this order:
    - `skills/ant-compact/SKILL.md`
    - `skills/ant-low-words/SKILL.md`
    - `skills/ant-product-map/SKILL.md`
+   - `skills/ant-research-run/SKILL.md`
 4. `docs/quick-start.md` only if the user wants step-by-step setup help.
 
 Use `README.ru.md` when the user writes in Russian.
@@ -38,6 +39,7 @@ Recommend:
 - `ant-compact` when the user wants short answers without losing meaning, checks, or safety.
 - `ant-low-words` only when the user explicitly wants maximum brevity or token saving.
 - `ant-product-map` when the user wants an idea, repo, app flow, MVP, integration picture, or project context turned into a simple HTML product map.
+- `ant-research-run` when the user wants deep research, market/lookalike research, repo critique, roadmap research, or broad investigation that should not be answered as one fragile final response.
 
 When unsure, recommend `ant-plain-language`.
 
@@ -88,6 +90,20 @@ Fast path:
    "Use this skill to create a simple HTML product map from my idea or project notes."
 
 Expected result: a local product-map.html showing the product goal, user, screens, flow, data/integrations, risks, open questions, and next MVP step.
+```
+
+For deep research requests, use this shape:
+
+```text
+Use ANT Research Run.
+
+Fast path:
+1. Open skills/ant-research-run/SKILL.md.
+2. Copy the text.
+3. Paste it into your AI agent with:
+   "Use this skill to split this research into a brief, evidence pass, critique pass, and synthesis gate."
+
+Expected result: the agent does not try to answer everything at once. It creates a research brief, evidence artifact, critique, and synthesis only after evidence exists.
 ```
 
 ## Maintainer Work

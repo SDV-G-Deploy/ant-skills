@@ -14,6 +14,7 @@ dist/ant-plain-language.zip
 dist/ant-compact.zip
 dist/ant-low-words.zip
 dist/ant-product-map.zip
+dist/ant-research-run.zip
 dist/SHA256SUMS
 ```
 
@@ -26,6 +27,7 @@ Each archive should contain only its skill folder, including:
 
 `ant-plain-language` also includes its `references/` files.
 `ant-product-map` also includes its `references/` files.
+`ant-research-run` also includes its `references/` files.
 
 After uploading a GitHub Release, download the assets and compare checksums:
 

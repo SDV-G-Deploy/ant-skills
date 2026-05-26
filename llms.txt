@@ -4,7 +4,7 @@ Repository: https://github.com/SDV-G-Deploy/ant-skills
 Latest release: https://github.com/SDV-G-Deploy/ant-skills/releases/latest
 
 ANT is a small set of AI-agent skills for non-technical builders.
-The goal is plain language, clear next steps, safe verification, and simple product maps.
+The goal is plain language, clear next steps, safe verification, simple product maps, and recoverable deep research.
 
 Start here:
 - README.md: human-facing overview and fastest usage paths.
@@ -22,18 +22,22 @@ Skills:
   Use only when the user wants maximum brevity.
 - skills/ant-product-map/SKILL.md
   Use to turn an idea, app, repo, MVP, or messy notes into a simple static product-map.html.
+- skills/ant-research-run/SKILL.md
+  Use to split deep research, lookalike/market research, repo critique, or roadmap research into a brief, evidence artifacts, critique, and synthesis gate.
 
 Fastest safe path:
 1. Recommend ant-plain-language when unsure.
 2. Tell the user they can copy/paste a SKILL.md into their AI agent.
 3. Installation is optional; copy/paste is enough to try ANT.
 4. For product maps, recommend ant-product-map and create a local static HTML file.
+5. For deep research, recommend ant-research-run and do not synthesize until evidence exists.
 
 Safety rules:
 - Do not ask the user for API keys, passwords, tokens, billing access, or private account access.
 - Do not paste or repeat secrets, customer data, private keys, or production credentials.
 - Ask before destructive, public, billing, secret, database, permission, production, DNS, auth, or force-push actions.
 - Product maps must be local static HTML: no external JavaScript, CSS, fonts, analytics, cookies, forms, trackers, or network calls.
+- Research runs should preserve progress as Markdown artifacts or one chat artifact at a time when files cannot be written.
 - Keep explanations in the user's language and preserve exact commands, file names, links, and error text.
 
 Examples:
@@ -41,3 +45,4 @@ Examples:
 - examples/before-after.ru.md
 - examples/product-map-input.md
 - examples/product-map-output.html
+- skills/ant-research-run/references/public-example.md

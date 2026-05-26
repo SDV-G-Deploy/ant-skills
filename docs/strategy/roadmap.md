@@ -27,7 +27,15 @@ Possible additional skills:
 - `ant-project-guide`: turns vague project goals into small, safe implementation steps.
 - `ant-handoff-summary`: creates non-technical summaries after agent work sessions.
 
-## v0.5.0 — Eval tooling
+## v0.5.0 — Research Run
+
+- `ant-research-run`: deep research without losing progress.
+- Research brief, evidence artifact, critique, and synthesis gate workflow.
+- Public example input/output for broad research requests.
+- Manual evals for broad research, chat-only mode, and over-broad request narrowing.
+- Release archive validation for five skills.
+
+## v0.6.0 — Eval tooling
 
 - Simple heuristic linting.
 - Example answer datasets.
