@@ -10,8 +10,12 @@
 
 ## With this skill
 
-> First create a research brief: question, decision supported, scope, out of scope, sources, artifact paths, pass list, and stop conditions. Then run evidence, analysis, critique, and synthesis as separate artifacts. Do not synthesize until the evidence artifact exists. If a run times out, resume from the latest written artifact.
+- Artifact 1: research brief.
+- Artifact 2: evidence matrix.
+- Artifact 3: critique.
+- Artifact 4: synthesis.
+- Rule: no synthesis before evidence; resume from the latest artifact after timeout.
 
 ## Difference
 
-Deep research becomes recoverable work, not one broad answer that can be lost or overconfident.
+Deep research becomes a recoverable workflow with named artifacts instead of one broad answer.
