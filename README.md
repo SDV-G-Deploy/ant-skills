@@ -8,13 +8,13 @@ ANT also includes artifact skills for product maps and recoverable deep research
 
 ## Pick Your ANT
 
-| Choose this | When you want | Use it |
-|---|---|---|
-| ANT Plain Language | “Explain what is happening so I understand it.” | [open](skills/ant-plain-language/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-plain-language/SKILL.md) |
-| ANT Compact | “Keep it short, but do not lose the point.” | [open](skills/ant-compact/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-compact/SKILL.md) |
-| ANT Low Words | “Use as few words as possible.” | [open](skills/ant-low-words/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-low-words/SKILL.md) |
-| ANT Product Map | “Turn this idea into a clear HTML product map.” | [open](skills/ant-product-map/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-product-map/SKILL.md) |
-| ANT Research Run | “Research deeply without losing progress.” | [open](skills/ant-research-run/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-research-run/SKILL.md) |
+| Choose this | When you want | Use it | Example |
+|---|---|---|---|
+| ANT Plain Language | “Explain what is happening so I understand it.” | [open](skills/ant-plain-language/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-plain-language/SKILL.md) | [before/after](skills/ant-plain-language/references/before-after.md) |
+| ANT Compact | “Keep it short, but do not lose the point.” | [open](skills/ant-compact/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-compact/SKILL.md) | [before/after](skills/ant-compact/references/before-after.md) |
+| ANT Low Words | “Use as few words as possible.” | [open](skills/ant-low-words/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-low-words/SKILL.md) | [before/after](skills/ant-low-words/references/before-after.md) |
+| ANT Product Map | “Turn this idea into a clear HTML product map.” | [open](skills/ant-product-map/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-product-map/SKILL.md) | [before/after](skills/ant-product-map/references/before-after.md) |
+| ANT Research Run | “Research deeply without losing progress.” | [open](skills/ant-research-run/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-research-run/SKILL.md) | [before/after](skills/ant-research-run/references/before-after.md) |
 
 Not sure? Start with **ANT Plain Language**.
 

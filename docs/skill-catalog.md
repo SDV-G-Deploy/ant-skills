@@ -12,6 +12,13 @@ Visual overview: [ANT Skills Map](maps/ant-skills-map.html).
 | `ant-product-map` | Turns ideas or repo context into simple evidence-based HTML product maps. | The user needs a product map, HTML scheme, MVP map, app map, user-flow map, integration map, or non-technical product overview. |
 | `ant-research-run` | Splits deep research into recoverable briefs, evidence artifacts, critique, and synthesis gates. | The user asks for deep research, market/lookalike research, repo critique, roadmap research, or broad investigation that may hit timeouts or context limits. |
 
+## Before / After Examples
+
+Each skill includes a local references/before-after.md file. The repository-level overview is here:
+
+- [English examples](../examples/before-after.en.md)
+- [Russian examples](../examples/before-after.ru.md)
+
 ## Repository descriptions
 
 Short:

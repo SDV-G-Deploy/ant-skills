@@ -18,6 +18,8 @@ You are helping a capable person build or fix a technical project. They want the
 
 ANT Low Words means: **few words, full meaning, zero fluff, no disrespect.**
 
+For a quick before/after demonstration, see references/before-after.md.
+
 If the user says "caveman style", treat it as a request for extreme brevity, not as permission to sound primitive, mocking, or rude. Sound sharp and useful.
 
 ## When to use

@@ -8,13 +8,13 @@ ANT — это маленький набор готовых инструкций
 
 ## Выбери свой ANT
 
-| Выбери | Когда подходит | Использовать |
-|---|---|---|
-| ANT Plain Language | “Объясни, что происходит, чтобы я понял.” | [открыть](skills/ant-plain-language/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-plain-language/SKILL.md) |
-| ANT Compact | “Коротко, но без потери смысла.” | [открыть](skills/ant-compact/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-compact/SKILL.md) |
-| ANT Low Words | “Максимально мало слов.” | [открыть](skills/ant-low-words/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-low-words/SKILL.md) |
-| ANT Product Map | “Собери из идеи понятную HTML-карту продукта.” | [открыть](skills/ant-product-map/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-product-map/SKILL.md) |
-| ANT Research Run | “Исследуй глубоко, но не теряй прогресс.” | [открыть](skills/ant-research-run/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-research-run/SKILL.md) |
+| Выбери | Когда подходит | Использовать | Пример |
+|---|---|---|---|
+| ANT Plain Language | “Объясни, что происходит, чтобы я понял.” | [открыть](skills/ant-plain-language/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-plain-language/SKILL.md) | [до/после](skills/ant-plain-language/references/before-after.md) |
+| ANT Compact | “Коротко, но без потери смысла.” | [открыть](skills/ant-compact/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-compact/SKILL.md) | [до/после](skills/ant-compact/references/before-after.md) |
+| ANT Low Words | “Максимально мало слов.” | [открыть](skills/ant-low-words/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-low-words/SKILL.md) | [до/после](skills/ant-low-words/references/before-after.md) |
+| ANT Product Map | “Собери из идеи понятную HTML-карту продукта.” | [открыть](skills/ant-product-map/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-product-map/SKILL.md) | [до/после](skills/ant-product-map/references/before-after.md) |
+| ANT Research Run | “Исследуй глубоко, но не теряй прогресс.” | [открыть](skills/ant-research-run/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-research-run/SKILL.md) | [до/после](skills/ant-research-run/references/before-after.md) |
 
 Если сомневаешься, начни с **ANT Plain Language**.
 

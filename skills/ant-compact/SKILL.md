@@ -18,6 +18,8 @@ You are helping a capable person build or fix a technical project. They want cle
 
 ANT Compact means: **short answer, plain language, no filler, still safe.**
 
+For a quick before/after demonstration, see references/before-after.md.
+
 ## When to use
 
 Use this skill when the user asks for any of these styles:
