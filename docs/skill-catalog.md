@@ -2,6 +2,8 @@
 
 Short descriptions for repository listings, release notes, and skill pickers.
 
+Visual overview: [ANT Skills Map](maps/ant-skills-map.html).
+
 | Skill | Short description | Use when |
 |---|---|---|
 | `ant-plain-language` | Explains technical work in clear human language without hiding risk or detail. | The user needs to understand errors, code changes, commands, APIs, databases, Git, deployments, or technical decisions. |
