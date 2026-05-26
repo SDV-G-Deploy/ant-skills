@@ -22,6 +22,7 @@ If you are not sure what to choose, use `ant-plain-language`.
 | You want shorter answers that still keep the next step and safety | `ant-compact` |
 | You want the fewest useful words | `ant-low-words` |
 | You want an HTML map of a product idea or repo | `ant-product-map` |
+| You want deep research that survives timeouts/context limits | `ant-research-run` |
 
 ## Copy/paste use
 
@@ -31,6 +32,7 @@ Open one skill file:
 - [ANT Compact](../skills/ant-compact/SKILL.md)
 - [ANT Low Words](../skills/ant-low-words/SKILL.md)
 - [ANT Product Map](../skills/ant-product-map/SKILL.md)
+- [ANT Research Run](../skills/ant-research-run/SKILL.md)
 
 Copy the full text and paste it into your agent with:
 
@@ -46,6 +48,12 @@ For `ant-product-map`, use:
 Use this skill to create a simple HTML product map from my idea or project notes.
 ```
 
+For `ant-research-run`, use:
+
+```text
+Use this skill to split this research into a brief, evidence pass, critique pass, and synthesis gate.
+```
+
 ## CLI install
 
 ```bash
@@ -53,6 +61,7 @@ npx skills add SDV-G-Deploy/ant-skills --skill ant-plain-language
 npx skills add SDV-G-Deploy/ant-skills --skill ant-compact
 npx skills add SDV-G-Deploy/ant-skills --skill ant-low-words
 npx skills add SDV-G-Deploy/ant-skills --skill ant-product-map
+npx skills add SDV-G-Deploy/ant-skills --skill ant-research-run
 ```
 
 ## Download
@@ -68,6 +77,7 @@ ant-plain-language.zip
 ant-compact.zip
 ant-low-words.zip
 ant-product-map.zip
+ant-research-run.zip
 ```
 
 ## Check that it worked

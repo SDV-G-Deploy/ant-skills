@@ -1,0 +1,7 @@
+interface:
+  display_name: "ANT Research Run"
+  short_description: "Recoverable deep research with evidence artifacts"
+  default_prompt: "Use $ant-research-run to split this deep research task into a brief, evidence pass, critique pass, and synthesis gate with durable artifacts."
+
+policy:
+  allow_implicit_invocation: true

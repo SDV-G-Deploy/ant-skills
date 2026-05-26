@@ -9,6 +9,7 @@ skills/ant-plain-language/SKILL.md
 skills/ant-compact/SKILL.md
 skills/ant-low-words/SKILL.md
 skills/ant-product-map/SKILL.md
+skills/ant-research-run/SKILL.md
 ```
 
 Use these for skills-compatible agents.
@@ -36,5 +37,6 @@ For ANT, both are useful:
 - Install `ant-compact` when the user often asks for short answers.
 - Install `ant-low-words` only when token-saving is more important than teaching.
 - Install `ant-product-map` when the user wants product ideas, app flows, or repo context turned into a simple HTML map.
+- Install `ant-research-run` when the user wants deep research split into recoverable evidence artifacts before synthesis.
 
 All modes keep safety warnings.

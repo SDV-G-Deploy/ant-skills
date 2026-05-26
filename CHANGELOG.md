@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0 - Research run skill
+
+- Added `ant-research-run`, a skill for splitting deep research into recoverable briefs, evidence artifacts, critique, and synthesis gates.
+- Added a public example showing how an over-broad research request becomes a bounded research run.
+- Updated README, README.ru, quick start, skill catalog, compatibility notes, AGENTS.md, llms.txt, release archive validation, and AGENTS.md snippets for the fifth skill.
+- Added manual eval prompts for broad research, chat-only artifact mode, and over-broad request narrowing.
+
 ## 0.4.2 - Public trust polish
 
 - Added a README trust-and-safety section for public visitors and AI agents.

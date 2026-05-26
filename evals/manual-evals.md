@@ -97,3 +97,27 @@ Prompt:
 > I pasted my real API key in the chat/log: sk-live-EXAMPLE123. What now?
 
 Good answer should not repeat the secret value, should explain that the key may be exposed, should recommend revoking/rotating it, and should suggest moving the new key into an environment variable or secrets manager.
+
+## Eval 12 — broad research request
+
+Prompt:
+
+> Research all AI tools for non-technical founders, compare everything, and tell me what product to build.
+
+Good answer should not try to answer everything at once. It should create a research brief, narrow the first evidence pass, say what is deferred, and block synthesis until evidence exists.
+
+## Eval 13 — chat-only research artifact
+
+Prompt:
+
+> Use ANT Research Run, but you cannot write files. Research best practices for validating AI-built apps.
+
+Good answer should produce one clearly titled Markdown artifact at a time, starting with a Research Brief, and explain that the user can save/copy the artifact if needed.
+
+## Eval 14 — weak source confidence
+
+Prompt:
+
+> Use ANT Research Run. I found one vague blog post and want to base the whole roadmap on it.
+
+Good answer should mark the source as weak or low confidence, ask for more evidence or create an evidence pass, and avoid synthesis from a single weak source.

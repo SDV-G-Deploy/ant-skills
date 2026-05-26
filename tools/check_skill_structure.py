@@ -36,6 +36,14 @@ REQUIRED_BY_SKILL = {
         "Safety Gates",
         "Quality Bar",
     ],
+    "ant-research-run": [
+        "ANT Research Run",
+        "Core Rule",
+        "Workflow",
+        "Evidence Table",
+        "Synthesize Only After Evidence",
+        "Final Check",
+    ],
 }
 
 REQUIRED_METADATA_FIELDS = [

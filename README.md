@@ -4,7 +4,7 @@ ANT is a small set of ready-to-use AI agent instructions for people who build wi
 
 Give ANT to Codex, Claude, Cursor, Hermes, OpenClaw, Copilot, or another coding agent when you want it to explain technical work clearly, safely, and in your language.
 
-ANT also includes a product-map skill for turning an idea or messy project context into a simple HTML map a non-technical builder can inspect and share.
+ANT also includes artifact skills for product maps and recoverable deep research.
 
 ## Pick Your ANT
 
@@ -14,6 +14,7 @@ ANT also includes a product-map skill for turning an idea or messy project conte
 | ANT Compact | “Keep it short, but do not lose the point.” | [open](skills/ant-compact/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-compact/SKILL.md) |
 | ANT Low Words | “Use as few words as possible.” | [open](skills/ant-low-words/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-low-words/SKILL.md) |
 | ANT Product Map | “Turn this idea into a clear HTML product map.” | [open](skills/ant-product-map/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-product-map/SKILL.md) |
+| ANT Research Run | “Research deeply without losing progress.” | [open](skills/ant-research-run/SKILL.md) / [raw](https://raw.githubusercontent.com/SDV-G-Deploy/ant-skills/main/skills/ant-research-run/SKILL.md) |
 
 Not sure? Start with **ANT Plain Language**.
 
@@ -31,6 +32,12 @@ If you want a product scheme instead of a communication style, use [ANT Product 
 
 ```text
 Use this skill to create a simple HTML product map from my idea or project notes.
+```
+
+If the task is deep research, market/lookalike research, or repo critique, use [ANT Research Run](skills/ant-research-run/SKILL.md) and say:
+
+```text
+Use this skill to split this research into a brief, evidence pass, critique pass, and synthesis gate.
 ```
 
 ## Trust And Safety Before Install
@@ -71,6 +78,7 @@ npx skills add SDV-G-Deploy/ant-skills --skill ant-plain-language
 npx skills add SDV-G-Deploy/ant-skills --skill ant-compact
 npx skills add SDV-G-Deploy/ant-skills --skill ant-low-words
 npx skills add SDV-G-Deploy/ant-skills --skill ant-product-map
+npx skills add SDV-G-Deploy/ant-skills --skill ant-research-run
 ```
 
 ### Option 3: Download a zip
@@ -86,6 +94,7 @@ ant-plain-language.zip
 ant-compact.zip
 ant-low-words.zip
 ant-product-map.zip
+ant-research-run.zip
 ```
 
 ## What ANT Changes
@@ -114,10 +123,15 @@ With ANT Product Map:
 
 > Creates a small `product-map.html` that shows the product goal, user, screens, flow, data/integrations, open questions, risks, and next MVP step.
 
+With ANT Research Run:
+
+> Turns a broad research request into a brief, evidence artifact, critique, and synthesis gate so progress survives timeouts and context limits.
+
 ## What ANT Tells Agents To Do
 
 - Answer in the user's language.
 - Explain technical work before using technical jargon.
+- Split broad research into evidence-producing artifacts before synthesis.
 - Say what changed and how to check it.
 - Keep exact commands, file names, and error text unchanged.
 - Ask before risky actions like deleting data, force pushing, changing secrets, billing, permissions, or deploying to production.
@@ -132,6 +146,7 @@ ANT is not “dumbing down” technical work. It is a communication layer: plain
 - [Before/after examples](examples/before-after.en.md)
 - [Product Map example input](examples/product-map-input.md)
 - [Product Map example output](examples/product-map-output.html)
+- [Research Run example](skills/ant-research-run/references/public-example.md)
 - [Russian README](README.ru.md)
 - [Windows install notes](docs/install-windows.md)
 

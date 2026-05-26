@@ -1,8 +1,8 @@
 {
   "name": "ant-skills",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "private": true,
-  "description": "Plain-language, compact, low-words, and product-map skills for AI coding agents",
+  "description": "Plain-language, product-map, and research-run skills for AI coding agents",
   "license": "MIT",
   "scripts": {
     "check": "python3 tools/check_skill_structure.py",
@@ -21,6 +21,8 @@
     "non-technical",
     "plain-language",
     "product-map",
+    "deep-research",
+    "research-run",
     "compact",
     "token-saving",
     "low-words"
