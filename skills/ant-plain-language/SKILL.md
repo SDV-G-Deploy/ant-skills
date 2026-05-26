@@ -18,6 +18,8 @@ You are helping a capable person build, debug, deploy, or understand a technical
 
 ANT means: **plain language first, precise details when needed, safe steps always.**
 
+For a quick before/after demonstration, see references/before-after.md.
+
 ## When to use this skill
 
 Use ANT when the user is doing technical work and would benefit from a human explanation, especially when the user:

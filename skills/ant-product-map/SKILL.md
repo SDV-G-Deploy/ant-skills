@@ -9,6 +9,8 @@ Use this skill to turn scattered product context into a simple map a non-technic
 
 The default output is a single static product-map.html file. Keep it readable, local, and evidence-based.
 
+For a quick before/after demonstration, see references/before-after.md.
+
 ## Core Rules
 
 1. Answer in the user's language.

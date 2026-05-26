@@ -20,6 +20,8 @@ ANT Research Run means: split the work, write artifacts early, checkpoint progre
 
 Plain version: when a research task is too big for one AI answer, turn it into small passes that each leave a useful artifact behind.
 
+For a quick before/after demonstration, see references/before-after.md.
+
 ## When To Use
 
 Use this skill when the user asks for:
