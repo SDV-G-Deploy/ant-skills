@@ -11,6 +11,9 @@ The default output is a single static product-map.html file. Keep it readable, l
 
 For a quick before/after demonstration, see references/before-after.md.
 
+For living products with repeated agent work, you may offer an advanced map workflow:
+canonical model -> generated human view -> validation check. Keep this optional. Most users still need the single compact HTML map first.
+
 ## Core Rules
 
 1. Answer in the user's language.
@@ -63,6 +66,20 @@ Default file names:
 - product-map.html for a standalone project;
 - docs/maps/<product-slug>.html when the repo already has docs/maps;
 - ask before overwriting an existing map.
+
+## Advanced Living Map Pattern
+
+Use this only when the product is active enough that hand-editing one HTML map will drift from reality.
+
+Recommended shape:
+
+1. Keep product facts in a small canonical model such as docs/maps/<product-slug>.product-map.yaml or JSON.
+2. Generate the human-readable docs/maps/<product-slug>.html from that model.
+3. Add a lightweight check command that validates the model and fails when the generated HTML is stale.
+4. Document which file is canonical and which file is generated.
+5. Keep any schema or renderer project-local until it has proven reusable across more than one product.
+
+Do not make this the default workflow. Do not extract a generic renderer too early. Do not present a project-local schema as an ANT contract unless it has been deliberately generalized.
 
 ## HTML Map Rules
 
